@@ -77,6 +77,7 @@ img {
 
 .header-contacts-nav {
   display: flex;
+  align-items: center;
 }
 .header .logo {
   color: var(--accent-color);
@@ -126,11 +127,8 @@ img {
 }
 
 .header-mail {
-  padding: 32px 0;
+  /* padding: 32px 0; */
   margin-right: 50px;
-}
-.header-phone {
-  padding: 32px 0;
 }
 
 /* Nav contacts  */
@@ -411,7 +409,6 @@ img {
 
 .card-descr {
   padding: 20px 24px;
-  padding-top: 0;
   border: 1px solid var(--card-border);
   border-top: 0px;
 }
