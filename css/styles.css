@@ -132,6 +132,25 @@ img {
 }
 
 /* Nav contacts  */
+/* Icons header */
+.icon {
+  display: inline-block;
+  content: '';
+  fill: currentColor;
+  margin-right: 10px;
+  align-items: center;
+}
+
+.mail-icon {
+  width: 16px;
+  height: 12px;
+}
+
+.tel-icon {
+  width: 10px;
+  height: 16px;
+}
+
 .header-contacts-nav,
 .header-mail,
 .header-phone {
