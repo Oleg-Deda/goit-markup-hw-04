@@ -19,6 +19,7 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
     <!--Header section-->
     <header class="border">
@@ -34,14 +35,17 @@
         <ul class="header-contacts-nav list">
           <li class="header-mail">
             <a href="mailto:info@devstudio.com"
-              ><svg class="mail-icon icon"><use href="./images/icons.svg#envelope"></use></svg>
+              ><svg class="mail-icon icon" width="16" height="12">
+                <use href="./images/icons.svg#envelope"></use>
+              </svg>
               info@devstudio.com</a
             >
           </li>
           <li class="header-phone">
             <a href="tel:+380961111111"
-              ><svg class="tel-icon icon"><use href="./images/icons.svg#smartphone"></use></svg>+38
-              096 111 11 11</a
+              ><svg class="tel-icon icon" width="10" height="16">
+                <use href="./images/icons.svg#smartphone"></use></svg
+              >+38 096 111 11 11</a
             >
           </li>
         </ul>
@@ -63,27 +67,38 @@
           <h2 class="visually-hidden">Преимущества</h2>
           <ul class="features-list list">
             <li class="features-item">
-              <svg class="antenna-icon icon">
-                <use href="./images/icons/icons.svg#antenna"></use>
-              </svg>
+              <div class="features-icon-container">
+                <svg class="antenna-icon" width="70" height="70">
+                  <use href="./images/icons.svg#antenna"></use>
+                </svg>
+              </div>
               <h3 class="features-item-title">Внимание к деталям</h3>
               <p class="features-descr">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
-            <li class="features-item icon-clock">
+            <li class="features-item">
+              <svg class="clock-icon icon">
+                <use href="./images/icons.svg#clock" width="70" height="70"></use>
+              </svg>
               <h3 class="features-item-title">Пунктуальность</h3>
               <p class="features-descr">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li class="features-item icon-diagram">
+            <li class="features-item">
+              <svg class="diagram-icon icon">
+                <use href="./images/icons.svg#diagram" width="70" height="70"></use>
+              </svg>
               <h3 class="features-item-title">Планирование</h3>
               <p class="features-descr">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li class="features-item icon-astronaut">
+            <li class="features-item">
+              <svg class="astronaut-icon icon">
+                <use href="./images/icons.svg#astronaut" width="70" height="70"></use>
+              </svg>
               <h3 class="features-item-title">Современные технологии</h3>
               <p class="features-descr">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
@@ -191,12 +206,16 @@
         <div class="container">
           <h2 class="clients-title">Постоянные клиенты</h2>
           <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li class="clients-item">
+              <svg class="clients-icon icon" width="106" height="60">
+                <use href="./images/icons.svg#logo-1"></use>
+              </svg>
+            </li>
+            <li class="clients-item">
+              <svg class="clients-icon icon" width="106" height="60">
+                <use href="./images/icons.svg#logo-1"></use>
+              </svg>
+            </li>
           </ul>
         </div>
       </section>

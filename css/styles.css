@@ -64,8 +64,8 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  /* outline: 2px solid red; */
-  /* outline-offset: -2px; */
+  outline: 2px solid red;
+  outline-offset: -2px;
 }
 .border {
   border-bottom: 1px solid var(--header-border);
@@ -141,15 +141,15 @@ img {
   align-items: center;
 }
 
-.mail-icon {
-  width: 16px;
-  height: 12px;
-}
+/* .mail-icon { */
+/* width: 16px; */
+/* height: 12px; */
+/* } */
 
-.tel-icon {
-  width: 10px;
-  height: 16px;
-}
+/* .tel-icon { */
+/* width: 10px; */
+/* height: 16px; */
+/* } */
 
 .header-contacts-nav,
 .header-mail,
@@ -236,24 +236,31 @@ img {
 }
 .features-list {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  justify-content: center;
+
   gap: var(--indent);
 }
 .features-list .features-item {
   width: 270px;
 }
-
-.antenna-icon {
-  width: 70px;
-  height: 70px;
+.features-icon-container {
+  width: 270px;
+  height: 120px;
+  background-color: var(--secondary-bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--indent);
 }
+
 .features-item-title {
   color: var(--secondary-color);
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-
   text-transform: uppercase;
 }
 
@@ -280,6 +287,28 @@ img {
   flex-wrap: wrap;
   gap: var(--indent);
 }
+
+/* .antenna-icon {
+  width: 270px;
+  height: 120px;
+  background-color: var(--secondary-bg-color);
+  margin-bottom: 30px;
+} */
+
+/* .clock-icon { */
+/* width: 70px;
+  height: 70px; */
+/* } */
+
+/* .diagram-icon {
+  width: 70px;
+  height: 70px;
+}
+
+.astronaut-icon {
+  width: 70px;
+  height: 70px;
+} */
 
 /* Team */
 .team {
