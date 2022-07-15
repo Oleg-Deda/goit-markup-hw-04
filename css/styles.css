@@ -242,6 +242,11 @@ img {
 .features-list .features-item {
   width: 270px;
 }
+
+.antenna-icon {
+  width: 70px;
+  height: 70px;
+}
 .features-item-title {
   color: var(--secondary-color);
   margin-bottom: 10px;
@@ -318,6 +323,13 @@ img {
   padding: 30px 10px;
 }
 
+/* Clients */
+.clients-title {
+  color: var(--secondary-color);
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
 /* Footer */
 .footer:not(.logo) {
   background-color: var(--bg-darkgrey-color);
