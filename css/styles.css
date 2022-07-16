@@ -289,32 +289,8 @@ img {
   gap: var(--indent);
 }
 
-/* .antenna-icon {
-  width: 270px;
-  height: 120px;
-  background-color: var(--secondary-bg-color);
-  margin-bottom: 30px;
-} */
-
-/* .clock-icon { */
-/* width: 70px;
-  height: 70px; */
-/* } */
-
-/* .diagram-icon {
-  width: 70px;
-  height: 70px;
-}
-
-.astronaut-icon {
-  width: 70px;
-  height: 70px;
-} */
-
 /* Team */
-/* .team {
-  background-color: var(--secondary-bg-color);
-} */
+
 .team-list {
   display: flex;
   flex-wrap: wrap;
@@ -332,8 +308,8 @@ img {
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  /* border-bottom-left-radius: 4px; */
-  /* border-bottom-right-radius: 4px; */
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -356,17 +332,35 @@ img {
 .team-card-descr {
   padding: 30px 10px;
 }
-
-.social {
+/* Socials icons */
+.socials {
   display: flex;
-  padding-left: 32px;
+  /* padding-left: 32px; */
   align-items: center;
-  gap: 22px;
+  gap: 10px;
+  justify-content: center;
+}
+.socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  color: var(--icon-color);
+  background-color: #ffffff;
+  border-radius: 50%;
 }
 
-.team-icon {
-  color: red;
+.socials-link:hover,
+.socials-link:focus {
+  background-color: var(--accent-color);
+  color: #ffffff;
 }
+
+.socials-icon {
+  fill: currentColor;
+}
+
 .team-icon {
   display: flex;
   color: #afb1b8;
@@ -382,12 +376,49 @@ img {
 }
 
 /* Clients */
-.clients-title {
+/* .clients-title {
   color: var(--secondary-color);
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+} */
+
+.clients-item {
+  display: block;
+  justify-content: center;
+  align-items: center;
 }
+
+.clients-title {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  color: var(--icon-color);
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+}
+.client-icon {
+  fill: currentColor;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border: 1px solid var(--accent-color);
+}
+
 /* Footer */
 .footer:not(.logo) {
   background-color: var(--bg-darkgrey-color);
