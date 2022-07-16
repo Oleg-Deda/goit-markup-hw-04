@@ -14,6 +14,7 @@
   --main-font-family: 'Roboto', sans-serif;
   --logo-font: 'Raleway', sans-serif;
   --items: 3;
+  --icon-color: #afb1b8;
 }
 
 body {
@@ -311,9 +312,9 @@ img {
 } */
 
 /* Team */
-.team {
+/* .team {
   background-color: var(--secondary-bg-color);
-}
+} */
 .team-list {
   display: flex;
   flex-wrap: wrap;
@@ -329,8 +330,11 @@ img {
 }
 .team-item {
   background-color: var(--primary-white-color);
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  /* border-bottom-left-radius: 4px; */
+  /* border-bottom-right-radius: 4px; */
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-uppertitle {
@@ -346,10 +350,35 @@ img {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
+  padding-bottom: 16px;
 }
 
 .team-card-descr {
   padding: 30px 10px;
+}
+
+.social {
+  display: flex;
+  padding-left: 32px;
+  align-items: center;
+  gap: 22px;
+}
+
+.team-icon {
+  color: red;
+}
+.team-icon {
+  display: flex;
+  color: #afb1b8;
+  /* align-items: center;
+  justify-content: center;
+  gap: 22px; */
+  /* width: 20px;
+  height: 20px; */
+
+  background-color: var(--primary-white-color);
+  border-radius: 10%;
+  margin-bottom: 42px;
 }
 
 /* Clients */
