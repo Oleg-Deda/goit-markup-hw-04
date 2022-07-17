@@ -337,7 +337,6 @@ img {
   width: 44px;
   height: 44px;
   color: var(--icon-color);
-  background-color: var(--primary-white-color);
   border-radius: 50%;
 }
 
@@ -361,12 +360,12 @@ img {
 }
 
 /* Clients */
-/* .clients-title {
+.clients-title {
   color: var(--secondary-color);
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-} */
+}
 
 .clients-item {
   display: block;
@@ -406,6 +405,25 @@ img {
 }
 
 /* Footer */
+/* .footer-container {
+  display: flex;
+} */
+.social-links {
+  display: flex;
+  flex-direction: column;
+}
+.footer-block {
+  display: flex;
+  align-items: baseline;
+}
+.footer-adress {
+  font-size: 14px;
+  line-height: 1.71;
+  display: flex;
+  flex-direction: column;
+  margin-right: 70px;
+}
+
 .footer:not(.logo) {
   background-color: var(--bg-darkgrey-color);
   color: var(--primary-white-color);
@@ -414,7 +432,7 @@ img {
 
 .footer-logo {
   color: var(--accent-color);
-  display: inline-block;
+  /* display: inline-block; */
   margin-bottom: 20px;
   margin-top: 0;
   font-family: 'Raleway';
@@ -431,32 +449,33 @@ img {
   color: var(--primary-white-color);
 }
 
-.adress-link {
+.address {
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+}
+.email-link {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   line-height: 1.71;
 }
-.adress-link:hover,
-.adress-link:focus {
+.email-link:hover,
+.email-link:focus {
   color: var(--accent-color);
 }
-.footer-block {
-  display: flex;
-  align-items: baseline;
-}
-.footer-adress {
+.tel-link {
+  color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   line-height: 1.71;
-
-  margin-right: 70px;
+}
+.tel-link:hover,
+.tel-link:focus {
+  color: var(--accent-color);
 }
 
-.footer-container {
-  align-items: baseline;
-}
-.contacts-container {
+/* .contacts-container {
   display: flex;
-}
+} */
 
 .social-title {
   font-weight: 700;
@@ -466,6 +485,10 @@ img {
   text-align: center;
   padding-bottom: 20px;
 }
+.socials {
+  display: flex;
+}
+
 .social-link {
   align-items: baseline;
   display: flex;
@@ -484,6 +507,7 @@ img {
 
 .social-links {
   box-sizing: border-box;
+  display: flex;
 }
 
 .social-link:hover,
