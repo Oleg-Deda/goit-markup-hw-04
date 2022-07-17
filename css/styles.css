@@ -44,9 +44,9 @@ ol {
   padding: 0;
   margin: 0;
 }
-img {
+/* img {
   display: block;
-}
+} */
 
 .list {
   list-style: none;
@@ -79,7 +79,7 @@ img {
 
 .header-contacts-nav {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 .header .logo {
   color: var(--accent-color);
@@ -135,13 +135,18 @@ img {
 /* Icons header */
 .icon {
   display: inline-block;
-  content: '';
   fill: currentColor;
   margin-right: 10px;
+}
+/* .header-phone {
   align-items: center;
+} */
+
+.contacts-mail,
+.contacts-phone {
+  align-items: baseline;
 }
 
-.header-contacts-nav,
 .header-mail,
 .header-phone {
   color: var(--description-color);
@@ -165,7 +170,6 @@ img {
   text-align: center;
   text-transform: uppercase;
   max-width: 1600px;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
   outline: 1px solid black;
@@ -317,11 +321,12 @@ img {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .team-card-descr {
   padding: 30px 10px;
+  background-color: var(--primary-white-color);
 }
 /* Socials icons */
 .socials {
@@ -375,7 +380,7 @@ img {
 
 .clients-title {
   text-align: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .clients-list {
@@ -482,8 +487,7 @@ img {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  text-align: center;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .socials {
   display: flex;
@@ -566,12 +570,6 @@ img {
   flex-basis: calc((100% - var (--indent) * (var(--items) -1)) / var(--items));
 }
 
-.project-cards:hover,
-.project-cards:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
 .project-text {
   color: var(--secondary-color);
 }
@@ -594,4 +592,12 @@ img {
   padding: 20px 24px;
   border: 1px solid var(--card-border);
   border-top: 0px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.card-link:hover,
+.card-descr:hover,
+.card-descr:focus,
+.card-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
