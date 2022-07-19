@@ -135,6 +135,7 @@ img {
 .icon {
   display: inline-block;
   fill: currentColor;
+  margin-right: 10px;
   vertical-align: middle;
 }
 /* .header-phone {
